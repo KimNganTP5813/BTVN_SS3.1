@@ -1,6 +1,52 @@
 import React from "react";
 
 export default function StudentList() {
+  const students = [ id. studentCode, studentName, age, gender
+    { id: 4, 
+      studentCode: SV004, 
+      studentName: "Nguyễn Văn Y",
+      age: 25, gender: "Nam" 
+    },
+    { id: 5, 
+      studentCode: SV005,
+      studentName: "Trần Lý E",
+      age: 23, 
+      gender: "Nữ" 
+    },
+    ];
+
+  students.map((student) => (
+          <tr key={student.id}>
+                <td>{student.id}</td>
+                <td>{student.studentCode}</td>
+                <td>{student.studentName}</td>
+                <td>{student.age}</td>
+                <td>{student.gender}</td>
+                <td>
+                  <div className="template-demo">
+                    <button
+                      type="button"
+                      className="btn btn-danger btn-icon-text"
+                    >
+                      Xem
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-warning btn-icon-text"
+                    >
+                      Sửa
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-success btn-icon-text"
+                    >
+                      Xóa
+                    </button>
+                  </div>
+                </td>
+              </tr>
+        ));
+  
   return (
     <div>
       {" "}
